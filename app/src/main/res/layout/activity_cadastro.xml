@@ -38,62 +38,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.121"
+        tools:text="Nome" />
 
     <EditText
         android:id="@+id/editTextTelefone"
         android:layout_width="342dp"
         android:layout_height="45dp"
-        android:layout_marginStart="195dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="196dp"
-        android:layout_marginBottom="433dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
         android:text="Telefone"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.972" />
+        app:layout_constraintTop_toTopOf="@+id/editTextNome" />
 
     <EditText
         android:id="@+id/editTextCPF"
         android:layout_width="342dp"
         android:layout_height="45dp"
-        android:layout_marginStart="195dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="196dp"
+        android:layout_marginTop="56dp"
         android:text="CPF"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTelefone" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="342dp"
         android:layout_height="45dp"
-        android:layout_marginStart="195dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="196dp"
+        android:layout_marginTop="62dp"
         android:text="Email"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/editTextCPF" />
 
     <EditText
         android:id="@+id/editTextSenha"
         android:layout_width="342dp"
         android:layout_height="45dp"
-        android:layout_marginStart="195dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="196dp"
+        android:layout_marginTop="64dp"
         android:text="Senha"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/editTextEmail" />
 
     <Button
         android:id="@+id/btnCadastrar"
