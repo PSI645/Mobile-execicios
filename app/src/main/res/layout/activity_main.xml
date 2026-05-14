@@ -5,97 +5,121 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CCC9C9"
+    android:background="#FFFFFF"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="43dp">
 
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="300dp"
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        android:textColor="#000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroud2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_form"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="Seja Bem Vindo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#176206"
-        android:textSize="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#12723A"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnCadastrar"
-        android:layout_width="128dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="92dp"
-        android:backgroundTint="#175603"
-        android:text="Login"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:padding="32dp">
 
-    <Button
-        android:id="@+id/buttonCadastro"
-        android:layout_width="128dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="94dp"
-        android:backgroundTint="#175603"
-        android:text="Cadastro"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnCadastrar"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        style="@android:style/Widget.EditText"
-        android:layout_width="300dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="240dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="64dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="38dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="9dp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:srcCompat="@drawable/baseline_person_24" />
+            <EditText
+                android:id="@+id/editTextTextEmailAddress2"
+                style="@android:style/Widget.EditText"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="176dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Email"
+                android:hyphenationFrequency="normal"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#757575"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="38dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/icons8_senha_50" />
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="128dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="92dp"
+                android:backgroundTint="#F8C131"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/buttonCadastro"
+                android:layout_width="128dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="94dp"
+                android:backgroundTint="#F8C131"
+                android:text="Cadastro"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnCadastrar"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="180dp"
+                android:layout_height="162dp"
+                app:srcCompat="@mipmap/ic_launcher_foreground"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
